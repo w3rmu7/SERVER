@@ -1,0 +1,5 @@
+{
+    "require_login_admin": true,
+    "require_login_status": true,
+    "require_login_files": true
+}

@@ -1,0 +1,70 @@
+
+<html>
+    <body>
+
+        <table align='center'>
+            <tr>
+                <td id="year">
+                
+                </td>
+            </tr>
+            <tr>
+                <td id="time">
+                
+                </td>
+                
+            </tr>
+        </table>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    </body>
+    <style>
+        td{
+            text-align: center;
+            width:200px; margin: 20px auto;
+            font-family:'Share Tech Mono';
+            font-size:30px;
+            border: 2px solid black;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/18444/18444438.png);
+
+            color: red;
+        }
+    </style>
+
+
+
+</html>
+
+<script>
+    function Clock(){
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth()+1;
+        var dt = date.getDate();
+        if(month+1 <10){
+            month = '0'+month;
+        }
+        if(dt <10){
+            dt = '0'+dt;
+        }
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+        if(hour >12){
+            hour = hour - 12;
+            hour = '0' + hour
+        }
+        if(min < 10){
+            min = '0' + min;
+        }
+        if(sec <10){
+            sec = '0' + sec;
+        }
+        document.getElementById("time").innerHTML = hour + ":"+ min+":"+sec ;
+        document.getElementById("year").innerHTML = year + "-"+month+"-"+dt;
+
+    }
+
+    Clock()
+
+    
+</script>
