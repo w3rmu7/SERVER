@@ -129,3 +129,10 @@ $file = __DIR__ . '/data/requests.jsonl';
   </script>
 </body>
 </html>
+
+
+<!--
+기록 삭제용
+sudo truncate -s 0 /var/www/html/files/webhook/data/requests.jsonl
+sudo sh -c '> /var/www/html/files/webhook/data/requests.jsonl'
+-->
